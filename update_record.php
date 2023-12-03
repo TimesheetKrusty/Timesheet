@@ -3,28 +3,20 @@ require 'db_config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["update"])) {
     $recordId = $_POST["record_id"];
-    $name = $_POST["name"];
+    $name = $_POST["name"]; // Update with your form field names
     $date = $_POST["date"];
     $hours = $_POST["hours"];
     $task = $_POST["task"];
     $activity = $_POST["activity"];
 
     // Update the record in the database
-    $update_sql = "UPDATE timesheet SET name = ?, date = ?, hours = ?, task = ?, activity = ? WHERE id = ?";
-    $stmt = $conn->prepare($update_sql);
+    $sql = "UPDATE timesheet SET name = '$name', date = '$date', hours = $hours, task = '$task', activity = '$activity' WHERE id = $recordId";
 
-    // Bind parameters
-    $stmt->bind_param("ssissi", $name, $date, $hours, $task, $activity, $recordId);
-
-    if ($stmt->execute()) {
+    if ($conn->query($sql) === TRUE) {
         echo "Record updated successfully.";
     } else {
-        echo "Error updating record: " . $stmt->error;
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
-    $stmt->close();
-} else {
-    echo "Invalid request";
 }
 
 // Redirect back to the timesheet page or the page where you want to display records

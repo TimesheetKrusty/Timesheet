@@ -97,10 +97,21 @@
 
         <!-- Add the edit-modal here with input fields for editing -->
         <div id="edit-modal" style="display: none;" class="edit-modal">
-            <h2>Edit Record</h2>
-            <form id="edit-form" class="edit-form">
-                <!-- Your edit form content -->
-            </form>
+        <h2>Edit Record</h2>
+        <form id="edit-form" class="edit-form">
+            <input type="text" id="edit-record-id" readonly>
+            <label for="edit-name">Name:</label>
+            <input type="text" id="edit-name" name="edit-name">
+            <label for="edit-date">Date:</label>
+            <input type="text" id="edit-date" name="edit-date">
+            <label for="edit-hours">Hours:</label>
+            <input type="text" id="edit-hours" name="edit-hours">
+            <label for="edit-task">Task:</label>
+            <input type="text" id="edit-task" name="edit-task">
+            <label for="edit-activity">Activity:</label>
+            <input type="text" id="edit-activity" name="edit-activity">
+            <button onclick="saveEditedData()" class="edit-btn" >Save</button>
+            <button onclick="closeEditModal()" class="edit-btn" >Close</button>
         </div>
 
         <!-- Productivity view button -->
