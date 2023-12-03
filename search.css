@@ -1,0 +1,72 @@
+:root {
+    --main-bg: #2a3447;
+    --soft-bg: #384256;
+    --dark-bg: #222b3c;
+    --main-color: white;
+    --blueish: #e6eded;
+    --dark-color: #2a3447;
+    --redish-pink: #f45b69;
+    --light-redish-pink: #f45b6810;
+    --dark-yellow: #ffc107;
+    --light-yellow: rgb(224, 189, 85);
+    --dark-red: #db0006;
+    --green: #2BFAC9;
+    --buttonBlue: #ece781;
+    --darkBlue: #f7f065;
+    --dark-peach: #FFDEDE;
+}
+
+
+
+/* search option css */
+#search-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if they exceed the container's width */
+}
+
+#search-form label {
+    margin: 10px; /* Add some margin to the labels for better spacing */
+}
+
+#search-form input, #search-form select, #search-form button {
+    margin: 10px; /* Add some margin to the form elements for better spacing */
+}
+
+#search-form button {
+    background-color: var(--green);
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#search-form button:hover{
+    background-color: #11C69B;
+}
+
+/* Productivity view button CSS */
+.productivity-view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.productivity-view-button {
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--green);
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.productivity-view-button:hover {
+    background-color: #11C69B;
+}

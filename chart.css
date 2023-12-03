@@ -1,0 +1,27 @@
+
+/* chart.css */
+
+/* Apply some basic styling to the chart container */
+.chartcontainer {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Style the chart title */
+.charttitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Apply a box shadow to the chart canvas */
+#productivityChart {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the chart on the page */
+canvas {
+    display: block;
+    margin: 0 auto;
+}

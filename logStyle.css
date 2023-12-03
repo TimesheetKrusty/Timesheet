@@ -1,0 +1,100 @@
+:root {
+    --main-bg: #f0f0f0; /* Light gray background */
+    --soft-bg: #ffffff; /* White background for container */
+    --dark-bg: #2a3447;
+    --main-color: #333; /* Dark text color */
+    --soft-color: #555; /* Slightly lighter text color */
+    --dark-color: #777; /* Grey text color for questions */
+    --redish-pink: #f45b69;
+    --light-redish-pink: #d02432;
+    --nav-bg: #ffc107; /* Dark yellow for navigation bar */
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: var(--main-bg);
+margin: 0;
+padding: 0;
+}
+
+.navbar {
+background-color: var(--nav-bg);
+color: #fff;
+padding: 10px;
+}
+
+.navbar-logo {
+margin-right: 20px;
+width: 50px;
+height: auto;
+}
+.navbar-title {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 32px;
+margin-left: 20px;
+text-align: center;
+font-weight: bold;
+}
+
+nav {
+background-color: var(--nav-bg); /* Dark yellow background for navigation bar */
+padding: 5px 0 0 10px;
+text-align: right; /* Align navigation links to the right */
+}
+
+nav a {
+color: var(--dark-bg); /* Dark text color for navigation links */
+text-decoration: none;
+padding: 10px 20px;
+}
+
+h1 {
+margin: 0;
+}
+
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: var(--soft-bg);
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container label {
+display: block;
+font-weight: bold;
+color: var(--soft-color); /* Grey text color for questions */
+margin-bottom: 10px;
+}
+
+.container .form-element {
+margin-bottom: 10px; /* Adjust the margin as needed */
+width: 50%;
+}
+
+.Checkinoutf{
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc; /* Light gray border */
+border-radius: 5px;
+background-color: var(--soft-bg);
+color: var(--main-color);
+}
+
+.dateClass::before {
+content: ""; /* No content before the date input */
+}
+
+.sumbitButton {
+    background-color: var(--redish-pink);
+    color: var(--soft-bg); /* Grey text color for button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sumbitButton:hover {
+background-color: var(--light-redish-pink);
+} 
